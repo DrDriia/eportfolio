@@ -1,0 +1,13 @@
+J'ai mis longtemps à faire ce que je voulais avec le background. Je souhaitais que ce dernier prenne toute la place, qu'importe la taille de l'écran et sans pour autant se transformer en mosaïque. Et cela a été ardu, diantre. A un tel point que j'ai dû aller étudier le code d'un autre site pour comprendre que ce que je cherchais était le paramètre "cover". Mais, sur le coup, cela m'a pris du temps et beaucoup d'expérimentations sans succès.
+
+J'ai commencé ma première page sans Bootstrap. Mais, après lecture des conversations de mes camarades, j'ai cru comprendre que Bootstrap devait absolument être utilisé dans le projet. J'ai donc inclus le CSS de Bootstrap et il m'a cassé tout le CSS que j'avais soigneusement arrangé au préalable. C'est pourquoi j'ai pris un certain temps à tout corriger.
+
+Passons maintenant à la page Compétences : vertical-align ne marche pas. J'ai essayé maintes et maintes fois, cela a toujours été un échec pour centrer le texte verticalement sur le cercle. Heureusement, la taille des cercles étant fixe, la margin-top à avoir ne changeait pas entre chaque cercle. Mais tout de même, cela m'a pris énormément de temps pour, au final, ne pas réussir.
+
+Autre chose que je n'ai pas réussi à régler qui me frustre pas mal : le z-index. Vous noterez que le cercle de pourcentage est au-dessus du texte, ce qui rend la lisibilité du texte noir difficile. C'est pourquoi j'ai essayé, malheureusement sans succès, d'utiliser les z-index afin de faire passer le texte au-dessus.
+
+Mais au moins, le texte et le cercle de pourcentage ont fini par être l'un sur l'autre et non pas l'un à côté de l'autre. Je ne souhaitais pas que le texte soit dans le cercle de pourcentage mais bel et bien dans le cercle originellement, notamment dans le cas où le cercle de pourcentage serait trop petit pour accueillir le texte (cf. cercle Javascript). A force de flex et de position relative ou absolute, j'y suis parvenue. Cela m'a pris du temps mais j'en suis fière.
+
+Originellement, pour ma page Expériences, je visualisais une frise chronologique. D'où la forme que cette page a prise. Or, chaque fois que j'essayais de mettre une div en forme de triangle à côté de la frise que j'avais faite, cette dernière était plus haute que la frise. Donc pas alignée verticalement avec cette dernière sans que je ne comprenne pourquoi cela s'affichait plus haut. C'est pourquoi j'ai abandonné l'idée.
+
+Et le même problème se produisait pour la page Loisirs, au moment où on passait la souris au-dessus d'une case : elle se surélevait. J'ai résolu ce problème en changeant mon display:none par un color:transparent mais, comme pour les marges, je n'en suis pas entièrement satisfaite.

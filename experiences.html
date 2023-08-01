@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>Expériences</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min4.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="nav-large">
+    <div class="large">
+      <ul class="nav">
+        <li class="sum"><a class="menu-btn" href="accueil.html">Accueil</a></li>
+        <li class="sum" id="competences"><a class="menu-btn" href="competences.html">Compétences</a>
+          <ul class="s-nav" id="sm-competences">
+            <li class="sum"><a class="menu-btn" href="competences.html#informatique">Informatique</a></li>
+            <li class="sum"><a class="menu-btn" href="competences.html#langues">Langues</a></li>
+          </ul>
+        </li>
+        <li class="sum" id="activepage">Expériences</li>
+        <li class="sum"><a class="menu-btn" href="loisirs.html">Loisirs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav class="nav-small">
+    <div class="small">
+      <button class="sum" id="activepage" onclick="deploy()">Expériences</button>
+      <ul class="s-nav">
+        <li class="sum"><a class="menu-btn" href="accueil.html">Accueil</a></li>
+        <li class="sum"><a class="menu-btn" href="competences.html">Compétences</a></li>
+        <li class="sum"><a class="menu-btn" href="loisirs.html">Loisirs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sheet">
+    <div class="chrono">
+      <button class="chrono-btn" onclick="active('2020')">
+        <p class="label" type="center">2020</p>
+      </button>
+      <div class="active-year" id="2020">
+        <p class="input" type="center">Première générale spé NSI</p>
+        <p class="input" type="center">Découverte de la programmation</p>
+      </div>
+      <button class="chrono-btn" onclick="active('2021')">
+        <p class="label" type="center">2021</p>
+      </button>
+      <div class="inactive-year" id="2021">
+        <p class="input" type="center">Terminale générale spé NSI</p>
+      </div>
+      <button class="chrono-btn" onclick="active('2022')">
+        <p class="label" type="center">2022</p>
+      </button>
+      <div class="inactive-year" id="2022">
+        <p class="input" type="center">20/20 à l'épreuve du baccalauréat de NSI</p>
+        <p class="input" type="center">Obtention du baccalauréat général avec mention TB</p>
+        <p class="input" type="center">Première année en BUT informatique</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <a class="contact" href="mailto:daria.chemloul@etu.u-paris.fr">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <div class="credits">
+    <p>Artwork par <a class="p-link" href="https://www.deviantart.com/joeyjazz">JoeyJazz</a></p>
+  </div>
+
+  <script>
+    function deploy() {
+      if (document.getElementsByClassName("s-nav")[1].style.display == "none") {
+        document.getElementsByClassName("s-nav")[1].style.display = "block";
+      }
+      else {
+        document.getElementsByClassName("s-nav")[1].style.display = "none";
+      }
+    }
+
+    function active(id) {
+      document.getElementsByClassName("active-year")[0].className = "inactive-year";
+      document.getElementById(id).className = "active-year";
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
