@@ -358,39 +358,39 @@ caption{
 }
 
 #python{
-    height:89%;
-    width:89%;
-    margin:4.5%;
+    height:92%;
+    width:92%;
+    margin:3.5%;
 }
 
-#c{
-    height:72%;
-    width:72%;
-    margin:13%;
+#java{
+    height:82%;
+    width:82%;
+    margin:8%;
 }
 
-#html{
+#cpp{
     height:61%;
     width:61%;
     margin:18.5%;
 }
 
-#css{
-    height:58%;
-    width:58%;
-    margin:20%;
+#html{
+    height:79%;
+    width:79%;
+    margin:9.5%;
 }
 
-#sqlite{
-    height:34%;
-    width:34%;
-    margin:32%;
+#js{
+    height:89%;
+    width:89%;
+    margin:4.5%;
 }
 
-#javascript{
-    height:16%;
-    width:16%;
-    margin:41%;
+#sql{
+    height:67%;
+    width:67%;
+    margin:15.5%;
 }
 
 #fr{
